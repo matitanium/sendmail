@@ -6,7 +6,7 @@ passw = "******" #your password
 froM = user
 to  = ["target@gmail.com"] #target
 message = "hello matin "
-smtp = smtplib.SMTP()
+smtp = smtplib.SMTP("smtp.gmail.com")
 smtp.connect("smtp.gmail.com",587)
 smtp.starttls()
 smtp.login(user,passw)
